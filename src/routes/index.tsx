@@ -11,9 +11,9 @@ import { About } from "@/components/site/About";
 import { ContactSection } from "@/components/site/ContactSection";
 import { Footer } from "@/components/site/Footer";
 
-const title = "OpenWays | Business Development, Partnerships & Market Expansion";
+const title = "OpenWays | Practical Growth Through BD, Partnerships & Local Representation";
 const description =
-  "OpenWays helps companies grow through business development, strategic partnerships, market expansion and commercial advisory in Singapore and across APAC.";
+  "OpenWays helps companies grow through business development (BD), strategic partnerships and local representation in Singapore and across APAC.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
