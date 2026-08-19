@@ -9,7 +9,7 @@ const LINKEDIN = "https://www.linkedin.com/in/liadkaikov/";
 export function ContactSection() {
   const [values, setValues] = useState({ name: "", company: "", email: "", goal: "" });
   const [errors, setErrors] = useState<Errors>({});
-  const [touched, setTouched] = useState<Record<string, boolean>>({});
+  const [touched, setTouched] = useState<Partial<Record<keyof typeof values, boolean>>>({});
   const [sent, setSent] = useState(false);
 
   const validate = (v: typeof values): Errors => {
