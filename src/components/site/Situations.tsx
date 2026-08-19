@@ -49,12 +49,7 @@ export function Situations() {
                   (i % 2 === 1 ? "lg:pl-10" : "")
                 }
               >
-                <span className="flex gap-5">
-                  <span className="display mt-1 text-lg italic text-primary/70">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-lg leading-snug text-ink sm:text-xl">{s}</span>
-                </span>
+                <span className="block text-lg leading-snug text-ink sm:text-xl">{s}</span>
               </Reveal>
             ))}
           </ul>
