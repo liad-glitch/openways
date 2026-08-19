@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import liadAsset from "@/assets/liad-kaikov.png.asset.json";
+import liadAsset from "@/assets/liad-kaikov-cutout.png.asset.json";
 
 export function About() {
   return (
