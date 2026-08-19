@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import liadAsset from "@/assets/liad-kaikov.png.asset.json";
 
 export function About() {
   return (
@@ -12,11 +13,11 @@ export function About() {
                 className="absolute -left-6 -top-6 h-40 w-40 rounded-tl-[2rem] border-l border-t border-primary/30"
               />
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-t-[10rem] bg-secondary/60">
-                <div className="flex h-full items-end justify-center pb-10">
-                  <span className="text-xs tracking-[0.2em] uppercase text-ink-soft">
-                    Portrait
-                  </span>
-                </div>
+                <img
+                  src={liadAsset.url}
+                  alt="Liad Kaikov, Founder of OpenWays"
+                  className="h-full w-full object-cover"
+                />
               </div>
               <figcaption className="mt-4 text-sm text-ink-soft">
                 Liad Kaikov &middot; Founder, OpenWays &middot; Singapore
@@ -31,17 +32,21 @@ export function About() {
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-ink">
               <p>
-                OpenWays was founded by Liad Kaikov in Singapore.
+                OpenWays was founded by Liad Kaikov in Singapore to help companies navigate growth
+                when the path forward is not always obvious.
               </p>
               <p>
-                Liad&rsquo;s background sits at the intersection of business development,
-                partnerships and stakeholder engagement, built in international environments
-                where commercial progress depends on understanding people as much as markets.
+                With a background spanning business development, partnerships, public policy and
+                stakeholder engagement, Liad has worked across complex environments where progress
+                depends on understanding the people involved, aligning interests and knowing how to
+                move opportunities forward.
               </p>
               <p className="text-ink-soft">
-                That includes public-policy and cross-sector work alongside commercial roles, and
-                direct exposure to the Singapore and wider APAC market &mdash; the perspective
-                behind how OpenWays approaches growth today.
+                That perspective shapes how OpenWays works today: combining commercial thinking
+                with a strong understanding of relationships, markets and decision-making. Based in
+                Singapore, OpenWays supports startups, growing businesses and international
+                companies looking to build partnerships, strengthen their business development
+                approach or expand across APAC.
               </p>
             </div>
           </Reveal>
