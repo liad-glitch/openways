@@ -80,10 +80,7 @@ export function Services() {
                 }
               >
                 <div className="lg:col-span-5">
-                  <span className="display text-sm italic text-primary/60">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="display mt-2 text-[2rem] leading-tight sm:text-[2.5rem]">
+                  <h3 className="display text-[2rem] leading-tight sm:text-[2.5rem]">
                     {s.title}
                   </h3>
                 </div>
