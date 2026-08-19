@@ -46,8 +46,8 @@ export function Hero() {
         <div className="mt-14 grid gap-10 lg:mt-20 lg:grid-cols-12">
           <Reveal delay={140} className="lg:col-span-5 lg:col-start-2">
             <p className="text-lg leading-relaxed text-ink sm:text-xl">
-              OpenWays helps companies turn growth ambitions into commercial opportunities
-              through business development, strategic partnerships and market expansion.
+              Practical growth through business development, partnerships and local
+              representation.
             </p>
           </Reveal>
           <Reveal delay={220} className="lg:col-span-5 lg:col-start-8">
