@@ -14,8 +14,8 @@ export function WhyOpenWays() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="grid gap-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-6">
-            <p className="eyebrow">Why OpenWays</p>
-            <h2 className="display mt-4 text-[2.4rem] leading-tight sm:text-[3.4rem]">
+            <p className="label-rule">Why OpenWays</p>
+            <h2 className="display mt-5 text-[2.4rem] leading-tight sm:text-[3.4rem]">
               Commercial thinking with a{" "}
               <span className="italic text-primary">stakeholder perspective.</span>
             </h2>

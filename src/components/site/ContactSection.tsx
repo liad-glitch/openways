@@ -49,20 +49,10 @@ export function ContactSection() {
       id="contact"
       className="relative scroll-mt-24 overflow-hidden bg-secondary/50 py-24 lg:py-36"
     >
-      <svg
+      <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        viewBox="0 0 1440 900"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M-40 700 C 340 700 520 380 900 320 C 1170 277 1300 220 1500 90"
-          fill="none"
-          stroke="var(--primary)"
-          strokeWidth="1.2"
-          opacity="0.3"
-        />
-      </svg>
+        className="pointer-events-none absolute -right-[24rem] -bottom-[26rem] size-[50rem] rounded-full border border-primary/15"
+      />
 
       <div className="relative mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="grid gap-16 lg:grid-cols-12">

@@ -11,20 +11,8 @@ const situations = [
 
 export function Situations() {
   return (
-    <section className="relative overflow-hidden border-t border-border/70 bg-sand-deep/60 py-24 lg:py-36">
-      <svg
-        aria-hidden="true"
-        className="pointer-events-none absolute left-0 top-0 h-full w-full opacity-70"
-        viewBox="0 0 1440 900"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M120 -20 C 120 260 200 380 420 470 C 660 570 700 720 640 940"
-          fill="none"
-          stroke="var(--sky)"
-          strokeWidth="1.2"
-        />
-      </svg>
+    <section className="relative overflow-hidden border-t border-border/70 bg-sand-deep/50 py-24 lg:py-36">
+
 
       <div className="relative mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-12">

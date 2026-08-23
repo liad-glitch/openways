@@ -3,41 +3,23 @@ import { Reveal } from "./Reveal";
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-36 pb-24 lg:pt-52 lg:pb-40">
-      {/* flowing path lines */}
-      <svg
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 h-[720px] w-full"
-        viewBox="0 0 1440 720"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M-40 610 C 300 590 430 300 760 250 C 1050 206 1240 240 1500 130"
-          fill="none"
-          stroke="var(--sky)"
-          strokeWidth="1.5"
-          opacity="0.85"
-        />
-        <path
-          d="M-40 680 C 340 660 470 400 820 340 C 1120 288 1280 320 1500 210"
-          fill="none"
-          stroke="var(--primary)"
-          strokeWidth="1"
-          opacity="0.28"
-        />
-        <circle cx="760" cy="250" r="4" fill="var(--primary)" opacity="0.5" />
-      </svg>
+      {/* single brand gesture: a broad cropped arc opening to the right */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-40 -top-24 size-[560px] rounded-full bg-secondary/50 blur-3xl"
+        className="pointer-events-none absolute -right-[26rem] -top-[22rem] size-[52rem] rounded-full border border-primary/15 sm:-right-[20rem]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 -top-24 size-[560px] rounded-full bg-secondary/40 blur-3xl"
       />
 
       <div className="relative mx-auto max-w-[1200px] px-6 lg:px-10">
         <Reveal>
-          <p className="eyebrow">Singapore &middot; APAC &middot; Growth advisory</p>
+          <p className="label-rule">Singapore &middot; APAC &middot; Growth advisory</p>
         </Reveal>
 
         <Reveal delay={80}>
-          <h1 className="display mt-6 max-w-[15ch] text-[3.4rem] leading-[0.98] sm:text-7xl lg:text-[6.5rem]">
+          <h1 className="display mt-7 max-w-[15ch] text-[3.4rem] leading-[0.98] sm:text-7xl lg:text-[6.5rem]">
             Open ways
             <span className="block pl-[0.12em] italic text-primary sm:pl-[1.5em]">to growth.</span>
           </h1>

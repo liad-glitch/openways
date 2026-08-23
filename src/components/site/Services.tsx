@@ -64,9 +64,9 @@ export function Services() {
     <section id="services" className="scroll-mt-24 py-24 lg:py-36">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <Reveal>
-          <p className="eyebrow">Services</p>
-          <h2 className="display mt-4 max-w-[16ch] text-[2.6rem] leading-tight sm:text-6xl">
-            How OpenWays <span className="italic text-primary">can help</span>
+          <p className="label-rule">Services</p>
+          <h2 className="display mt-5 max-w-[16ch] text-[2.6rem] leading-tight sm:text-6xl">
+            How OpenWays <span className="text-primary">can help</span>
           </h2>
         </Reveal>
 
@@ -89,7 +89,7 @@ export function Services() {
                   <ul className="mt-7 space-y-3">
                     {s.points.map((p) => (
                       <li key={p} className="flex gap-3 text-base text-ink-soft">
-                        <span aria-hidden="true" className="mt-2.5 h-px w-5 shrink-0 bg-primary/50" />
+                        <span aria-hidden="true" className="mt-2.5 h-px w-5 shrink-0 bg-primary/40" />
                         <span>{p}</span>
                       </li>
                     ))}

@@ -104,15 +104,35 @@
 @utility display {
   font-family: var(--font-display);
   font-weight: 300;
-  letter-spacing: -0.015em;
-  line-height: 1.05;
+  letter-spacing: -0.02em;
+  line-height: 1.04;
 }
 
 @utility eyebrow {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-soft);
+}
+
+/* Section label: eyebrow with a sparse terracotta hairline */
+@utility label-rule {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--terracotta);
+    opacity: 0.85;
+  }
 }
 
 /* Scroll reveal */
