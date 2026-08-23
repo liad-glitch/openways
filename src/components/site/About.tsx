@@ -7,9 +7,9 @@ export function About() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-10 lg:col-start-2">
-            <p className="eyebrow">About</p>
-            <h2 className="display mt-4 text-[2.4rem] leading-tight sm:text-5xl">
-              About <span className="italic text-primary">OpenWays</span>
+            <p className="label-rule">About</p>
+            <h2 className="display mt-5 text-[2.4rem] leading-tight sm:text-5xl">
+              About <span className="text-primary">OpenWays</span>
             </h2>
             <div className="mt-8 max-w-4xl space-y-6 text-lg leading-relaxed text-ink">
               <p>

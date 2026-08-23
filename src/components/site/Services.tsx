@@ -89,7 +89,7 @@ export function Services() {
                   <ul className="mt-7 space-y-3">
                     {s.points.map((p) => (
                       <li key={p} className="flex gap-3 text-base text-ink-soft">
-                        <span aria-hidden="true" className="mt-2.5 h-px w-5 shrink-0 bg-primary/50" />
+                        <span aria-hidden="true" className="mt-2.5 h-px w-5 shrink-0 bg-primary/40" />
                         <span>{p}</span>
                       </li>
                     ))}
