@@ -64,9 +64,9 @@ export function Services() {
     <section id="services" className="scroll-mt-24 py-24 lg:py-36">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <Reveal>
-          <p className="eyebrow">Services</p>
-          <h2 className="display mt-4 max-w-[16ch] text-[2.6rem] leading-tight sm:text-6xl">
-            How OpenWays <span className="italic text-primary">can help</span>
+          <p className="label-rule">Services</p>
+          <h2 className="display mt-5 max-w-[16ch] text-[2.6rem] leading-tight sm:text-6xl">
+            How OpenWays <span className="text-primary">can help</span>
           </h2>
         </Reveal>
 
