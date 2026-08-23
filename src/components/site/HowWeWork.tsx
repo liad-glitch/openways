@@ -13,8 +13,8 @@ export function HowWeWork() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
-            <p className="eyebrow">How we work</p>
-            <h2 className="display mt-4 text-[2.4rem] leading-tight sm:text-5xl">
+            <p className="label-rule">How we work</p>
+            <h2 className="display mt-5 text-[2.4rem] leading-tight sm:text-5xl">
               Built around the opportunity,{" "}
               <span className="italic text-primary">not a fixed playbook.</span>
             </h2>
@@ -29,37 +29,19 @@ export function HowWeWork() {
         </div>
 
         <div className="relative mt-20">
-          <svg
-            aria-hidden="true"
-            className="absolute inset-x-0 top-8 hidden h-24 w-full lg:block"
-            viewBox="0 0 1200 100"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M40 78 C 260 78 300 20 520 20 C 740 20 780 78 1000 78 C 1090 78 1130 52 1170 30"
-              fill="none"
-              stroke="var(--sky)"
-              strokeWidth="1.5"
-            />
-          </svg>
-
-          <ol className="relative grid gap-10 lg:grid-cols-4 lg:gap-8">
+          <ol className="grid gap-10 lg:grid-cols-4 lg:gap-10">
             {steps.map((s, i) => (
               <Reveal
                 as="li"
                 key={s.label}
                 delay={i * 120}
                 className={
-                  "border-l border-primary/25 pl-5 lg:border-l-0 lg:pl-0 " +
-                  (i % 2 === 0 ? "lg:pt-24" : "lg:pt-2")
+                  "border-l border-primary/20 pl-5 lg:border-l-0 lg:border-t lg:pl-0 lg:pt-6 " +
+                  (i % 2 === 0 ? "lg:mt-16" : "")
                 }
               >
-                <span
-                  aria-hidden="true"
-                  className="mb-4 hidden size-2.5 rounded-full bg-primary lg:block"
-                />
                 <h3 className="display text-2xl sm:text-3xl">{s.label}</h3>
-                <p className="mt-2 max-w-[26ch] text-sm leading-relaxed text-ink-soft">{s.note}</p>
+                <p className="mt-3 max-w-[26ch] text-sm leading-relaxed text-ink-soft">{s.note}</p>
               </Reveal>
             ))}
           </ol>
