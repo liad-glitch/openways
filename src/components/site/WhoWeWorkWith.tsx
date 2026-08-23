@@ -14,27 +14,18 @@ export function WhoWeWorkWith() {
   return (
     <section
       id="who-we-work-with"
-      className="relative scroll-mt-24 overflow-hidden bg-secondary/40 py-24 lg:py-36"
+      className="relative scroll-mt-24 overflow-hidden bg-secondary/30 py-24 lg:py-36"
     >
-      <svg
+      {/* cropped arc: an opening field, not a block */}
+      <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        viewBox="0 0 1440 800"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M-20 120 C 420 40 900 300 1460 180"
-          fill="none"
-          stroke="var(--primary)"
-          strokeWidth="1"
-          opacity="0.25"
-        />
-      </svg>
+        className="pointer-events-none absolute -left-[28rem] top-1/4 size-[46rem] rounded-full border border-primary/10"
+      />
 
       <div className="relative mx-auto max-w-[1200px] px-6 lg:px-10">
         <Reveal>
-          <p className="eyebrow">Who we work with</p>
-          <h2 className="display mt-4 text-[2.6rem] leading-tight sm:text-5xl">
+          <p className="label-rule">Who we work with</p>
+          <h2 className="display mt-5 text-[2.6rem] leading-tight sm:text-5xl">
             Companies looking to:
           </h2>
         </Reveal>
