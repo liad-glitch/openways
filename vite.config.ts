@@ -6,7 +6,12 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// STATIC_EXPORT=1 (used by the GitHub Pages workflow) builds a Node server
+// bundle that scripts/static-export.mjs renders into a static site.
+const staticExport = process.env["STATIC_EXPORT"] === "1";
+
 export default defineConfig({
+  ...(staticExport ? { nitro: { preset: "node" as const } } : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this

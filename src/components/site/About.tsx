@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import liadAsset from "@/assets/liad-kaikov-cutout.png.asset.json";
+import liadPortrait from "@/assets/liad-kaikov-cutout.png";
 
 export function About() {
   return (
@@ -37,7 +37,7 @@ export function About() {
               <div className="flex items-end gap-5">
                 <div className="relative h-32 w-28 overflow-hidden rounded-t-[3rem] bg-secondary/60 sm:h-40 sm:w-32">
                   <img
-                    src={liadAsset.url}
+                    src={liadPortrait}
                     alt="Liad Kaikov, Founder of OpenWays"
                     className="h-full w-full object-cover"
                   />

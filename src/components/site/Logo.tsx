@@ -1,5 +1,5 @@
-import logo from "@/assets/openways-logo.png.asset.json";
-import logoLight from "@/assets/openways-logo-light.png.asset.json";
+import logo from "@/assets/openways-logo.png";
+import logoLight from "@/assets/openways-logo-light.png";
 
 export function Logo({
   className,
@@ -10,7 +10,7 @@ export function Logo({
 }) {
   return (
     <img
-      src={variant === "light" ? logoLight.url : logo.url}
+      src={variant === "light" ? logoLight : logo}
       alt="OpenWays"
       className={"h-7 w-auto sm:h-8 " + (className ?? "")}
       loading="eager"
