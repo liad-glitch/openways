@@ -9,18 +9,10 @@ export function Footer() {
           <p className="mt-3 text-sm text-ink-soft">Singapore</p>
         </div>
         <div className="flex items-center gap-8 text-sm">
-          <a
-            href="https://www.linkedin.com/in/liadkaikov/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-ink-soft transition-colors hover:text-primary"
-          >
+          <a href="https://www.linkedin.com/company/openwayssg/" target="_blank" rel="noreferrer" className="text-ink-soft transition-colors hover:text-primary">
             LinkedIn
           </a>
-          <a
-            href="mailto:hello@openways.sg"
-            className="text-ink-soft transition-colors hover:text-primary"
-          >
+          <a href="mailto:contact@openwayssg.com" className="text-ink-soft transition-colors hover:text-primary">
             Email
           </a>
         </div>
