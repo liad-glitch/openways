@@ -24,10 +24,21 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Install dependencies
         run: bun install --frozen-lockfile
-      - name: Build
+      - name: Build (static export target)
         run: bun run build
+        env:
+          STATIC_EXPORT: "1"
+      - name: Prerender static site
+        run: node scripts/static-export.mjs
+        env:
+          STATIC_EXPORT: "1"
+          PAGES_CNAME: openwayssg.com
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload site
