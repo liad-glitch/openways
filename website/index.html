@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OpenWays | Open ways to growth</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..500&amp;family=Figtree:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#E9F0F8;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#175AA5}a:hover{color:#0E3564}
+::selection{background:#E8F0F8;color:#0E3564}
+a:focus-visible,button:focus-visible{outline:3px solid #0E7C63;outline-offset:3px}
+.ow-btn{transition:transform .2s ease,background-color .2s ease,color .2s ease,box-shadow .2s ease}
+.ow-btn:hover{transform:translateY(-2px)}
+.ow-btn .ow-arrow{display:inline-block;transition:transform .2s ease}
+.ow-btn:hover .ow-arrow{transform:translateX(4px)}
+.ow-primary:hover{background:#0E3564 !important;color:#FFFFFF !important;box-shadow:0 8px 20px rgba(14,53,100,.18)}
+.ow-outline:hover{background:#E8F0F8 !important}
+.ow-light:hover{background:#E8F0F8 !important}
+.ow-link{transition:color .2s ease}.ow-link:hover{color:#175AA5 !important}
+.ow-card{transition:transform .25s ease,box-shadow .25s ease}
+.ow-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(14,53,100,.10)}
+.ow-row{transition:background-color .2s ease}
+.ow-row:hover{background:#F8FAFD !important}
+.ow-chev{display:inline-flex;transition:transform .25s ease}
+.ow-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ow-tab{transition:background-color .2s ease,color .2s ease}
+@keyframes owfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes owfade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.ow-fade{animation:owfade .35s ease}
+/* The crossing beside the headline: blue arrives from the left, then green from the right lands on top; both stay. */
+@keyframes owfromleft{from{opacity:0;transform:translateX(-55vw)}40%{opacity:1}to{opacity:1;transform:translateX(0)}}
+@keyframes owfromright{from{opacity:0;transform:translateX(55vw)}40%{opacity:1}to{opacity:1;transform:translateX(0)}}
+.ow-arch-blue{animation:owfromleft 1.4s cubic-bezier(.16,.84,.3,1) .2s both}
+.ow-arch-green{animation:owfromright 1.4s cubic-bezier(.16,.84,.3,1) 1s both}
+.ow-crossing{animation:owfloat 7s ease-in-out 2.6s infinite}
+/* Alignment element: the three lines fade in and meet the panel below */
+.ow-align{animation:owfade .8s ease .2s both}
+.ow-cross-sm{display:none}
+@media (max-width: 1000px){.ow-cross-lg{display:none !important}.ow-cross-sm{display:block}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.ow-fade,.ow-arch-blue,.ow-arch-green,.ow-crossing,.ow-align{animation:none}.ow-btn,.ow-card,.ow-chev{transition:none}.ow-btn:hover,.ow-card:hover{transform:none}}
+.ow-menu-link{transition:background-color .2s ease}.ow-menu-link:hover{background:#E9F0F8 !important}
+@media (max-width: 640px){.ow-tile{display:grid;grid-template-columns:40px 1fr;column-gap:14px;padding:16px !important}.ow-tile-icon{grid-row:span 2}.ow-tile-title{margin:0 !important;font-size:19px !important}.ow-tile-text{margin:2px 0 0 !important}}
+@media (max-width: 640px){.ow-navlinks{order:3;width:100%;margin-left:0 !important;justify-content:space-between}.ow-navcta{margin-left:auto !important}}
+.ow-row-btn{transition:background-color .2s ease}.ow-row-btn:hover{background:#F4F7FB !important}
+.ow-card-link{transition:transform .25s ease,box-shadow .25s ease}.ow-card-link:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(14,53,100,.10)}
+</style>
+
+<style>[hidden]{display:none!important}.ow-skip{position:fixed;top:-100px;left:16px;z-index:100;background:white;padding:12px}.ow-skip:focus{top:8px}</style>
+<meta name="description" content="OpenWays helps businesses grow and adopt change through business development, partnerships and stakeholder alignment in Singapore and across APAC."><link rel="canonical" href="https://openwayssg.com/"><meta property="og:title" content="OpenWays | Open ways to growth"><meta property="og:description" content="OpenWays helps businesses grow and adopt change through business development, partnerships and stakeholder alignment in Singapore and across APAC."><meta property="og:type" content="website"><meta property="og:url" content="https://openwayssg.com/"><link rel="icon" type="image/png" href="assets/logo.png"></head>
+<body>
+<a class="ow-skip" href="#main-content">Skip to content</a>
+
+
+
+<!-- OpenWays website · palette and type from Brand Guidelines v2.0, rounder interactive treatment -->
+<div style="font-family: 'Figtree', Arial, sans-serif; color: #111417; background: #E9F0F8; width: 100%; overflow-x: clip">
+
+<!-- HEADER (sticky, shared on every page) -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(233,240,248,0.94); backdrop-filter: saturate(160%) blur(10px); -webkit-backdrop-filter: saturate(160%) blur(10px); border-bottom: 1px solid #D3DEEA">
+<div style="max-width: 1288px; margin: 0 auto; padding: 10px clamp(16px, 4vw, 24px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 4px clamp(8px, 1.4vw, 16px)">
+<a href="index.html" aria-label="OpenWays home" style="display: inline-flex; align-items: center; min-height: 44px; flex-shrink: 0"><img src="assets/logo.png" alt="OpenWays" style="height: 30px; width: auto; display: block"></a>
+<nav aria-label="Main" class="ow-navlinks" style="margin-left: auto; display: flex; align-items: center; gap: clamp(0px, 1.2vw, 12px)">
+<a href="index.html" class="ow-link" aria-current="page" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 clamp(5px, 0.8vw, 8px); font-size: clamp(15px, 1.2vw, 16px); font-weight: 500; color: #0E3564; text-decoration: underline; text-decoration-color: #0E7C63; text-decoration-thickness: 2px; text-underline-offset: 8px">Home</a>
+<a href="growth.html" class="ow-link" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 clamp(5px, 0.8vw, 8px); font-size: clamp(15px, 1.2vw, 16px); font-weight: 500; color: #4A4F55; text-decoration: none">Growth</a>
+<a href="change.html" class="ow-link" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 clamp(5px, 0.8vw, 8px); font-size: clamp(15px, 1.2vw, 16px); font-weight: 500; color: #4A4F55; text-decoration: none">Change</a>
+<a href="about.html" class="ow-link" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 clamp(5px, 0.8vw, 8px); font-size: clamp(15px, 1.2vw, 16px); font-weight: 500; color: #4A4F55; text-decoration: none">About</a>
+</nav>
+<a href="contact.html" class="ow-btn ow-primary ow-navcta" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; box-sizing: border-box; padding: 0 clamp(16px, 1.6vw, 20px); border-radius: 999px; background: #175AA5; color: #FFFFFF; font-size: clamp(15px, 1.2vw, 16px); font-weight: 600; text-decoration: none; white-space: nowrap">Let’s talk <span class="ow-arrow" aria-hidden="true">→</span></a>
+</div>
+</header>
+<main id="main-content">
+
+<!-- HERO with the crossing (one per page) -->
+<section id="top" style="padding: clamp(20px, 3.5vw, 48px) 0 clamp(40px, 5vw, 64px)">
+<div style="max-width: 1288px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 24px); box-sizing: border-box">
+<p style="margin: 0; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: #E3F0EB; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #0A5E4B"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #0E7C63"></span>Singapore · APAC</p>
+<div style="margin-top: 16px; display: flex; align-items: stretch; gap: clamp(24px, 5vw, 64px)">
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
+<div style="display: flex; align-items: flex-end; gap: 16px">
+<h1 style="position: relative; z-index: 1; margin: 0; flex: 1 1 auto; min-width: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 300; line-height: 1.04; letter-spacing: -0.01em; font-size: clamp(36px, 4.8vw, 62px); color: #0E3564; max-width: 12em">Open ways to growth.</h1>
+<div class="ow-crossing ow-cross-sm" aria-hidden="true" style="flex: 0 0 auto; position: relative; height: 100px; aspect-ratio: 522 / 640">
+<img class="ow-arch-blue" src="assets/arch-blue.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom left; display: block">
+<img class="ow-arch-green" src="assets/arch-green.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom left; display: block">
+</div>
+</div>
+<p style="margin: 16px 0 0; max-width: 32em; font-size: 18px; line-height: 1.65; color: #111417; line-height: 1.55">OpenWays helps people with different priorities move in the same direction, whether they are partners and decision-makers outside your business or teams adopting change inside it.</p>
+<div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px">
+<a href="contact.html" class="ow-btn ow-primary" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; box-sizing: border-box; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 600; text-decoration: none; background: #175AA5; color: #FFFFFF">Let’s talk <span class="ow-arrow" aria-hidden="true">→</span></a>
+<a href="growth.html" class="ow-btn ow-outline" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; box-sizing: border-box; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 600; text-decoration: none; border: 1.5px solid #175AA5; background: #FFFFFF; color: #175AA5">Explore Growth</a>
+<a href="change.html" class="ow-btn ow-outline" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; box-sizing: border-box; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 600; text-decoration: none; border: 1.5px solid #175AA5; background: #FFFFFF; color: #175AA5">Explore Change</a>
+</div>
+
+</div>
+<div class="ow-cross-lg" aria-hidden="true" style="flex: 0 0 clamp(250px, 20.5vw, 290px); align-self: stretch; position: relative">
+<div class="ow-crossing" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto 0; height: min(100%, 240px)">
+<img class="ow-arch-blue" src="assets/arch-blue.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: right center; display: block">
+<img class="ow-arch-green" src="assets/arch-green.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: right center; display: block">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ONE IDEA, TWO WAYS IN -->
+<section id="ways" aria-labelledby="ways-title" style="padding: 0 0 clamp(56px, 7vw, 96px); scroll-margin-top: 72px">
+<div style="max-width: 1288px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 24px); box-sizing: border-box">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0E7C63">What we do</p>
+<h2 id="ways-title" style="margin: 16px 0 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.12; font-size: clamp(30px, 3.4vw, 42px); color: #0E3564">Growth outside the business. Change inside it.</h2>
+<p style="margin: 16px 0 0; max-width: 40em; font-size: 18px; line-height: 1.65; color: #111417">Both depend on the same thing: people with different priorities agreeing on what comes next and acting on it. OpenWays brings them together and keeps them moving.</p>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 12px">
+<li><a href="growth.html" class="ow-card-link" style="height: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: clamp(24px, 3vw, 36px); border-radius: 24px; background: #FFFFFF; border-top: 6px solid #175AA5; text-decoration: none">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #175AA5">Growth · Business development & partnerships</span>
+<span style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.12; font-size: clamp(30px, 3.4vw, 42px); color: #0E3564; font-size: clamp(26px, 2.8vw, 34px)">Reach the people who decide</span>
+<span style="font-size: 17px; line-height: 1.6; color: #111417">Lead generation, introductions to decision-makers and partnerships with a clear commercial purpose, in Singapore and across APAC.</span>
+<span style="display: flex; flex-wrap: wrap; gap: 6px"><span style="padding: 4px 12px; border-radius: 999px; background: #E9F0F8; font-size: 14px; color: #0E3564">Lead generation</span><span style="padding: 4px 12px; border-radius: 999px; background: #E9F0F8; font-size: 14px; color: #0E3564">Business development</span><span style="padding: 4px 12px; border-radius: 999px; background: #E9F0F8; font-size: 14px; color: #0E3564">Strategic partnerships</span></span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 16px; font-weight: 600; color: #175AA5">Explore Growth <span aria-hidden="true">→</span></span>
+</a></li>
+<li><a href="change.html" class="ow-card-link" style="height: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: clamp(24px, 3vw, 36px); border-radius: 24px; background: #FFFFFF; border-top: 6px solid #0E7C63; text-decoration: none">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0E7C63">Change · Change management & stakeholder alignment</span>
+<span style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.12; font-size: clamp(30px, 3.4vw, 42px); color: #0E3564; font-size: clamp(26px, 2.8vw, 34px)">Bring your teams with you</span>
+<span style="font-size: 17px; line-height: 1.6; color: #111417">When growth requires internal change: align the people who decide, address barriers early and stay close through implementation.</span>
+<span style="display: flex; flex-wrap: wrap; gap: 6px"><span style="padding: 4px 12px; border-radius: 999px; background: #E9F0F8; font-size: 14px; color: #0E3564">Stakeholder alignment</span><span style="padding: 4px 12px; border-radius: 999px; background: #E9F0F8; font-size: 14px; color: #0E3564">Barriers and expectations</span><span style="padding: 4px 12px; border-radius: 999px; background: #E9F0F8; font-size: 14px; color: #0E3564">Change plan and implementation support</span></span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 16px; font-weight: 600; color: #175AA5">Explore Change <span aria-hidden="true">→</span></span>
+</a></li>
+</ul>
+</div>
+</section>
+
+<!-- WHO WE WORK WITH -->
+<section aria-labelledby="who-title" style="padding: 0 0 clamp(56px, 7vw, 96px)">
+<div style="max-width: 1288px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 24px); box-sizing: border-box">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0E7C63">Who we work with</p>
+<h2 id="who-title" style="margin: 16px 0 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.12; font-size: clamp(30px, 3.4vw, 42px); color: #0E3564">For companies at a turning point</h2>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 24px">
+<li style="border-top: 2px solid #175AA5; padding-top: 16px"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.2; font-size: 22px; color: #0E3564">Startups</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.55; color: #4A4F55">Early traction, first market outside home.</p></li>
+<li style="border-top: 2px solid #175AA5; padding-top: 16px"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.2; font-size: 22px; color: #0E3564">Growing enterprises</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.55; color: #4A4F55">Ready for structure in business development.</p></li>
+<li style="border-top: 2px solid #175AA5; padding-top: 16px"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.2; font-size: 22px; color: #0E3564">SaaS companies</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.55; color: #4A4F55">Channel, reseller and partner-led expansion.</p></li>
+<li style="border-top: 2px solid #175AA5; padding-top: 16px"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.2; font-size: 22px; color: #0E3564">Organisations adopting new technology</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.55; color: #4A4F55">Changing how teams work while the business keeps running.</p></li>
+</ul>
+</div>
+</section>
+
+<!-- HOW WE WORK: the four-step band (fixed order and colours from the brand kit) -->
+<section aria-labelledby="how-title" style="padding: 0 0 clamp(56px, 7vw, 96px)">
+<div style="max-width: 1288px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 24px); box-sizing: border-box">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0E7C63">How we work</p>
+<h2 id="how-title" style="margin: 16px 0 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.12; font-size: clamp(30px, 3.4vw, 42px); color: #0E3564">The OpenWays way</h2>
+<ol style="list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); border-radius: 24px; overflow: hidden">
+<li style="background: #E8F0F8; padding: clamp(20px, 2.4vw, 28px)"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.2; color: #0E3564">Understand</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #4A4F55">The people involved, their priorities and the obstacles.</p></li>
+<li style="background: #D6E4F3; padding: clamp(20px, 2.4vw, 28px)"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.2; color: #0E3564">Prioritise</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #4A4F55">Where external support creates the most value.</p></li>
+<li style="background: #175AA5; padding: clamp(20px, 2.4vw, 28px)"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.2; color: #FFFFFF">Connect</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #E8F0F8">The right people, partners and conversations.</p></li>
+<li style="background: #0E7C63; padding: clamp(20px, 2.4vw, 28px)"><p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.2; color: #FFFFFF">Move forward</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #E3F0EB">Concrete next steps, measured as they progress.</p></li>
+</ol>
+</div>
+</section>
+
+<!-- FOUNDER TEASER -->
+<section aria-labelledby="founder-title" style="padding: 0 0 clamp(56px, 7vw, 96px)">
+<div style="max-width: 1288px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 24px); box-sizing: border-box">
+<div style="border-radius: 24px; background: #FFFFFF; padding: clamp(24px, 3vw, 40px); display: flex; flex-wrap: wrap; align-items: center; gap: 24px 40px">
+<div style="flex: 0 0 auto; width: 140px; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 999px 999px 20px 20px; background: #E9F0F8"><img src="assets/portrait-liad.png" alt="Portrait of Liad Kaikov, founder of OpenWays" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 1 1 360px; min-width: 0">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #0E7C63">Founded by Liad Kaikov</p>
+<h2 id="founder-title" style="margin: 12px 0 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; line-height: 1.12; font-size: clamp(30px, 3.4vw, 42px); color: #0E3564; font-size: clamp(24px, 2.6vw, 32px)">A founder you work with directly</h2>
+<p style="margin: 12px 0 0; max-width: 40em; font-size: 17px; line-height: 1.6; color: #4A4F55">Based in Singapore, with a background spanning business development, partnerships, public policy and stakeholder engagement.</p>
+<a href="about.html" class="ow-link" style="margin-top: 12px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 16px; font-weight: 600; color: #175AA5; text-decoration: none">Meet Liad <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT + FOOTER (shared).
+     Destination: the existing contact address (mailto:contact@openwayssg.com). To switch to a booking page, replace the mailto href values. -->
+<section id="contact" style="padding: 0 clamp(16px, 4vw, 24px) clamp(16px, 4vw, 24px); scroll-margin-top: 72px">
+<div style="max-width: 1240px; margin: 0 auto; border-radius: 32px; background: #175AA5; color: #FFFFFF; padding: clamp(48px, 7vw, 96px) 0 0; overflow: hidden">
+<div style="padding: 0 clamp(24px, 3vw, 40px); box-sizing: border-box">
+<p style="margin: 0; display: inline-flex; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.14); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF">Let’s talk</p>
+<h2 style="margin: 20px 0 0; font-family: 'Newsreader', Georgia, serif; font-weight: 300; line-height: 1.08; font-size: clamp(34px, 4.2vw, 52px); color: #FFFFFF; max-width: 14em">What would you like to move forward?</h2>
+<p style="margin: 20px 0 0; max-width: 40em; font-size: 18px; line-height: 1.6; color: #FFFFFF">Tell us about the growth or change you are working on, and we will look at it with you.</p>
+<div style="margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px">
+<a href="contact.html" class="ow-btn ow-light" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; box-sizing: border-box; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 600; text-decoration: none; background: #FFFFFF; color: #175AA5">Let’s talk <span class="ow-arrow" aria-hidden="true">→</span></a>
+</div>
+<!-- FOOTER -->
+<footer style="margin-top: clamp(56px, 8vw, 96px); padding: 24px 0 28px; border-top: 1px solid #5A88C0; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="Services" style="display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 15px"><a href="growth.html" style="display: inline-flex; align-items: center; min-height: 36px; color: #E8F0F8; text-decoration: none">Growth</a><a href="change.html" style="display: inline-flex; align-items: center; min-height: 36px; color: #E8F0F8; text-decoration: none">Change</a></nav>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="index.html" aria-label="OpenWays home" style="display: inline-flex"><img src="assets/logo-white.png" alt="OpenWays" style="height: 30px; width: auto; display: block"></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; font-size: 15px">
+<a href="about.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #FFFFFF; text-decoration: none">About</a>
+<a href="contact.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #FFFFFF; text-decoration: none">Contact</a>
+<a href="https://www.linkedin.com/company/openwayssg/" style="display: inline-flex; align-items: center; min-height: 44px; color: #FFFFFF; text-decoration: none">LinkedIn</a>
+<span style="color: #E8F0F8">Singapore · APAC · © 2026 OpenWays</span>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+
+<script>
+class DCLogic{constructor(){this.state={}}setState(next){this.state={...this.state,...next};update()}}
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  renderVals() {
+    return {
+
+    };
+  }
+}
+
+
+function update(){
+ const vals=component.renderVals();
+ const get=key=>key.split('.').reduce((v,k)=>v?.[k],vals);
+ const interpolate=s=>s.replace(/{{(.*?)}}/g,(_,key)=>String(get(key.trim())??''));
+ document.querySelectorAll('[data-ow-if]').forEach(el=>{el.hidden=!get(el.dataset.owIf)});
+ document.querySelectorAll('[data-ow-text]').forEach(el=>{el.textContent=get(el.dataset.owText)??''});
+ document.querySelectorAll('[data-ow-style]').forEach(el=>{el.setAttribute('style',interpolate(el.dataset.owStyle))});
+ document.querySelectorAll('[data-ow-attrs]').forEach(el=>{for(const [key,value] of Object.entries(JSON.parse(el.dataset.owAttrs)))el.setAttribute(key,interpolate(value))});
+ document.querySelectorAll('[data-ow-action]').forEach(el=>{el.onclick=()=>{const action=get(el.dataset.owAction);if(typeof action==='function')action()}});
+}
+const component=new Component({});
+update();
+</script>
+</body>
+</html>
