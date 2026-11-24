@@ -3,6 +3,7 @@ name: Deploy OpenWays to GitHub Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.ref }}"
   cancel-in-progress: false
 
 jobs:
@@ -20,30 +21,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install dependencies
-        run: bun install --frozen-lockfile
-      - name: Build (static export target)
-        run: bun run build
-        env:
-          STATIC_EXPORT: "1"
-      - name: Prerender static site
-        run: node scripts/static-export.mjs
-        env:
-          STATIC_EXPORT: "1"
-          PAGES_CNAME: openwayssg.com
+      - name: Validate and build the five-page website
+        run: node scripts/build-website.mjs
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
       - name: Upload site
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
       - name: Deploy
+        if: github.event_name != 'pull_request'
         uses: actions/deploy-pages@v4
